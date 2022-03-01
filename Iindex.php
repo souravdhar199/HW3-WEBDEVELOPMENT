@@ -95,7 +95,44 @@ foreach($month as $m){
     echo "<br>";
 }
 
+echo "<BR>";
+print("PART 4");
+echo "<BR>";
+echo "<BR>";
+
+
+$resturentData = array(
+"Fogo De Chao" => 40.50,
+"Aviva by Kameel" => 15.00,
+"Bones resturent" => 65.00,
+"Umi sushi buckhed" => 40.50,
+"Fandagles" => 30,
+"Capital grille" => 60.50,
+"Canoe" => 35.50,
+"One flow south" => 21.00,
+"Fox bros.bbq" => 15.00,
+"South city kitchen" => 29.00
+);
+
+echo "<p>Resturent details</p>";
+foreach($resturentData as $key=> $value){
+  echo "<p>$key --------  $value</td>";
+   
+}
+function orderByPrice(){
+    $temp1 = $resturentData;
+    sort($temp1);
+    foreach($temp1 as $key=> $value){
+        echo "<p>$key --------  $value</td>";
+    }
+}
+
+orderByPrice();
+
+
+
 ?>
+
 
 
 
